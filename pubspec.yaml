@@ -43,7 +43,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   flutter_native_splash: ^2.4.1
-  fluttertoast: ^8.2.6
+  fluttertoast: ^8.2.8
   form_builder_validators: ^11.0.0
   gap: ^3.0.1
   image_picker: ^1.1.2
