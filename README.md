@@ -39,7 +39,7 @@ This handy table lists all the methods you can use to install FaForever:
         <img width="220" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
       </a>
       <br>
-      <a href="https://github.com/cyf/faforever/releases/download/v1.0.0+45/FaForever_1.0.0+45-free.apk">
+      <a href="https://github.com/cyf/faforever/releases/download/v1.0.0+45/FaForever_1.0.0+45.apk">
         <img width="220" alt="APK download" src="https://user-images.githubusercontent.com/114044633/223920025-83687de0-e463-4c5d-8122-e06e4bb7d40c.png">
       </a>
     </td>
