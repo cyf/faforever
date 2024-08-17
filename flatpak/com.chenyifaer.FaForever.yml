@@ -1,0 +1,65 @@
+id: com.chenyifaer.FaForever
+
+# https://docs.flatpak.org/en/latest/available-runtimes.html
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: faforever
+
+# These are the permissions that the application needs
+# Read more about finishing here: https://docs.flatpak.org/en/latest/manifests.html#finishing
+# https://docs.flatpak.org/en/latest/sandbox-permissions.html
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --socket=pulseaudio
+  - --device=dri
+  - --share=network
+  - --filesystem=xdg-download
+
+modules:
+  - name: faforever
+    buildsystem: simple
+    build-commands:
+      - bsdtar -Oxf faforever.deb data.tar.zst | bsdtar -xf -
+      - install -Dm755 usr/share/faforever/faforever /app/bin/faforever
+      - cp -r usr/share/faforever/data usr/share/faforever/lib /app/bin/
+      - install -Dm644 com.chenyifaer.FaForever.desktop /app/share/applications/com.chenyifaer.FaForever.desktop
+      - install -Dm644 usr/share/icons/hicolor/128x128/apps/faforever.png /app/share/icons/hicolor/128x128/apps/com.chenyifaer.FaForever.png
+      - install -Dm644 usr/share/icons/hicolor/256x256/apps/faforever.png /app/share/icons/hicolor/256x256/apps/com.chenyifaer.FaForever.png
+      - install -Dm644 com.chenyifaer.FaForever.appdata.xml /app/share/appdata/com.chenyifaer.FaForever.appdata.xml
+    sources:
+      - type: file
+        only-arches:
+          - x86_64
+        url: https://github.com/cyf/faforever/releases/download/v1.0.0+394/faforever_1.0.0+394_linux_amd64.deb
+        dest-filename: faforever.deb
+        sha256: 03cc773a38b1f93bbb2d3c66a190497d46bbadb4d9900d8fdea6e64c4ac47150
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/cyf/faforever/releases/latest
+          version-query: .tag_name | sub("v";"")
+          url-query: .assets[] | select(.name=="faforever_" + $version + "_linux_amd64.deb") | .browser_download_url
+
+      - type: file
+        only-arches:
+          - aarch64
+        url: https://github.com/cyf/faforever/releases/download/v1.0.0+394/faforever_1.0.0+394_linux_aarch64.deb
+        dest-filename: faforever.deb
+        sha256: d94c7eb624a11e6cd010f464f55c4deec61207d8040659663e4986e39676be1e
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/cyf/faforever/releases/latest
+          version-query: .tag_name | sub("v";"")
+          url-query: .assets[] | select(.name=="faforever_" + $version + "_linux_aarch64.deb") | .browser_download_url
+
+      - type: file
+        url: https://raw.githubusercontent.com/cyf/faforever/v1.0.0+394/linux/shared/com.chenyifaer.FaForever.desktop
+        dest-filename: com.chenyifaer.FaForever.desktop
+        sha256: 8e13c1b75103f39a3f57f72c36537e18e01cfdaf50ba888c5524717cc3fefd12
+
+      - type: file
+        url: https://raw.githubusercontent.com/cyf/faforever/v1.0.0+394/linux/shared/com.chenyifaer.FaForever.appdata.xml
+        dest-filename: com.chenyifaer.FaForever.appdata.xml
+        sha256: 105d52fc72641f023f5155f69f6bba8baee05b4e4daf87234517130a5e94f28a

@@ -36,6 +36,40 @@ jobs:
           echo "$VERSION"
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
+      - name: Update version
+        run: |
+          # Update pubspec.yaml
+          VERSION=$VERSION yq -i '.version = strenv(VERSION)' pubspec.yaml
+
+          # Update flatpak/com.chenyifaer.FaForever.yml
+          TAG="$([[ "$ENV" == "staging" ]] && echo "$TAG_NAME.pre" || echo "$TAG_NAME")"
+          RELEASE="$([[ "$ENV" == "staging" ]] && echo "$VERSION.pre" || echo "$VERSION")"
+
+          url=https://github.com/cyf/faforever/releases/download/"$TAG"/faforever_"$RELEASE"_linux_aarch64.deb
+          wget -O faforever.deb "$url"
+          sha256=$(sha256sum faforever.deb | awk '{print $1}')
+          rm -f faforever.deb
+          url=$url yq -i '.modules[0].sources[1].url = strenv(url)' flatpak/com.chenyifaer.FaForever.yml
+          sha256=$sha256 yq -i '.modules[0].sources[1].sha256 = strenv(sha256)' flatpak/com.chenyifaer.FaForever.yml
+
+          desktop_url=https://raw.githubusercontent.com/cyf/faforever/"$TAG"/linux/shared/com.chenyifaer.FaForever.desktop
+          wget -O com.chenyifaer.FaForever.desktop "$desktop_url"
+          desktop_sha256=$(sha256sum com.chenyifaer.FaForever.desktop | awk '{print $1}')
+          rm -f com.chenyifaer.FaForever.desktop
+          desktop_url=$desktop_url yq -i '.modules[0].sources[2].url = strenv(desktop_url)' flatpak/com.chenyifaer.FaForever.yml
+          desktop_sha256=$desktop_sha256 yq -i '.modules[0].sources[2].sha256 = strenv(desktop_sha256)' flatpak/com.chenyifaer.FaForever.yml
+
+          appdata_url=https://raw.githubusercontent.com/cyf/faforever/"$TAG"/linux/shared/com.chenyifaer.FaForever.appdata.xml
+          wget -O com.chenyifaer.FaForever.appdata.xml "$appdata_url"
+          appdata_sha256=$(sha256sum com.chenyifaer.FaForever.appdata.xml | awk '{print $1}')
+          rm -f com.chenyifaer.FaForever.appdata.xml
+          appdata_url=$appdata_url yq -i '.modules[0].sources[3].url = strenv(appdata_url)' flatpak/com.chenyifaer.FaForever.yml
+          appdata_sha256=$appdata_sha256 yq -i '.modules[0].sources[3].sha256 = strenv(appdata_sha256)' flatpak/com.chenyifaer.FaForever.yml
+        env:
+          ENV: ${{ github.event.inputs.env }}
+          TAG_NAME: "v${{ steps.version_step.outputs.version }}"
+          VERSION: ${{ steps.version_step.outputs.version }}
+
       - name: Install QEMU deps
         run: |
           dnf -y install docker
@@ -49,7 +83,7 @@ jobs:
         uses: flatpak/flatpak-github-actions/flatpak-builder@master
         with:
           bundle: FaForever_${{ steps.version_step.outputs.version }}_linux_aarch64.flatpak
-          manifest-path: flatpak/com.chenyifaer.FaForever.json
+          manifest-path: flatpak/com.chenyifaer.FaForever.yml
           cache: false
           restore-cache: false
           cache-key: flatpak-builder-${{ github.sha }}-no-cache-restored
