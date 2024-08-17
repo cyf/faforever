@@ -105,7 +105,7 @@ snapcraft
 # upload a snap
 # https://snapcraft.io/docs/releasing-your-app
 # https://snapcraft.io/docs/channels
-snapcraft upload --release=latest/edge picguard_1.0.0_amd64.snap
+snapcraft upload --release=latest/edge faforever_1.0.0_amd64.snap
 
 # Test snap
 sudo snap install ./faforever_1.0.0_amd64.snap --dangerous
