@@ -1,5 +1,5 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
-  <Package Name="FaForever" Manufacturer="INSCO LLC" Version="1.0.0.44" UpgradeCode="9e9a6c86-498b-45a3-962a-a8023e749b4a">
+  <Package Name="FaForever" Manufacturer="INSCO LLC" Version="1.0.0.45" UpgradeCode="9e9a6c86-498b-45a3-962a-a8023e749b4a">
     <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
 
     <!-- Set an icon for Windows Settings > Apps -->
