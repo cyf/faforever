@@ -49,19 +49,19 @@ dependencies:
   image_picker: ^1.1.2
   keyboard_dismisser: ^3.0.0
   logging: ^1.2.0
-  mime: ^1.0.5
+  mime: ^1.0.6
   package_info_plus: ^8.0.2
   path: ^1.9.0
   permission_handler: ^11.3.1
   photo_view: ^0.15.0
   reorderables: ^0.6.0
-  sentry: ^8.7.0
-  sentry_flutter: ^8.7.0
-  sentry_logging: ^8.7.0
+  sentry: ^8.8.0
+  sentry_flutter: ^8.8.0
+  sentry_logging: ^8.8.0
   shared_preferences: ^2.3.2
   slang: ^3.31.1
   slang_flutter: ^3.31.0
-  syncfusion_flutter_sliders: ^26.2.10
+  syncfusion_flutter_sliders: ^26.2.11
   synchronized: ^3.2.0
   url_launcher: ^6.3.0
   uuid: ^4.4.2
