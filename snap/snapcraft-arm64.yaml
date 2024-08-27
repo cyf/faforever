@@ -1,5 +1,5 @@
 name: faforever
-version: 1.0.0+45
+version: 1.0.0+46
 summary: A third-party music player that replaces Synology DS Audio client.
 description: A third-party music player that replaces Synology DS Audio client.
 icon: snap/gui/faforever.png
