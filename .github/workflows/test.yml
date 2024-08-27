@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
   pull_request:
     paths-ignore:
+      - 'docs/**'
       - 'CHANGELOG.md'
-      - 'DEVELOPMENT.md'
       - 'LICENSE'
       - 'README.md'
       - 'Makefile'
@@ -13,8 +13,8 @@ on:
       - main
   push:
     paths-ignore:
+      - 'docs/**'
       - 'CHANGELOG.md'
-      - 'DEVELOPMENT.md'
       - 'LICENSE'
       - 'README.md'
       - 'Makefile'
