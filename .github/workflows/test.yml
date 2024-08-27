@@ -73,7 +73,7 @@ jobs:
       # Package the build.
       - name: Copy build for Android
         run: ls -la
-        working-directory: build/app/outputs/flutter-apk
+        working-directory: build/app/outputs/apk/staging/release
 
       - name: Clean up
         if: ${{ always() }}

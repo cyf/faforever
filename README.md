@@ -85,7 +85,10 @@
         <tr>
         <td>Android</td>
             <td>
-              <a href="https://github.com/cyf/faforever/releases/download/v1.0.0+45/FaForever_1.0.0+45-universal.apk"><img src="https://img.shields.io/badge/APK-Universal-044d29.svg?logo=android"></a>
+              <a href="https://github.com/cyf/faforever/releases/download/v1.0.0+45/FaForever_1.0.0+45-pro_universal.apk"><img src="https://img.shields.io/badge/APK-universal-FF0000.svg?logo=android"></a><br>
+              <a href="https://github.com/cyf/faforever/releases/download/v1.0.0+45/FaForever_1.0.0+45-pro_arm64-v8a.apk"><img src="https://img.shields.io/badge/APK-arm64--v8a-FFA500.svg?logo=android"></a><br>
+              <a href="https://github.com/cyf/faforever/releases/download/v1.0.0+45/FaForever_1.0.0+45-pro_armeabi-v7a.apk"><img src="https://img.shields.io/badge/APK-armeabi--v7a-00FF00.svg?logo=android"></a><br>
+              <a href="https://github.com/cyf/faforever/releases/download/v1.0.0+45/FaForever_1.0.0+45-pro_x86_64.apk"><img src="https://img.shields.io/badge/APK-x86--64-0000FF.svg?logo=android"></a>
             </td>
         </tr>
         <tr>
