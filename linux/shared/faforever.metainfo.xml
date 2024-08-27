@@ -2,15 +2,28 @@
 <!--
     Generator for metainfo & .desktop files:
     https://www.freedesktop.org/software/appstream/metainfocreator/#/
+    https://docs.flathub.org/banner-preview/
+    https://www.freedesktop.org/software/appstream/docs/chap-Quickstart.html#sect-Quickstart-DesktopApps
 -->
 <component type="desktop-application">
-    <id>com.chenyifaer.FaForever</id>
+    <id>faforever</id>
     <name>FaForever</name>
     <summary>A third-party music player that replaces Synology DS Audio client</summary>
-    <developer_name>kjxbyz</developer_name>
+    <summary xml:lang="zh">一款替代Synology DS Audio客户端的第三方音乐播放器</summary>
+    <developer id="com.kjxbyz">
+        <name>kjxbyz</name>
+        <name xml:lang="zh">科技小白英仔</name>
+    </developer>
+    <url type="bugtracker">https://github.com/cyf/faforever/issues</url>
     <url type="homepage">https://www.chenyifaer.com/faforever</url>
+    <url type="donation">https://buymeacoffee.com/wangying</url>
+    <url type="vcs-browser">https://github.com/cyf/faforever</url>
     <metadata_license>MIT</metadata_license>
     <project_license>MIT</project_license>
+    <branding>
+        <color type="primary" scheme_preference="light">#e0f2f7</color>
+        <color type="primary" scheme_preference="dark">#1d2a36</color>
+    </branding>
     <supports>
         <control>pointing</control>
         <control>keyboard</control>
@@ -20,8 +33,9 @@
     </recommends>
     <description>
         <p>A third-party music player that replaces Synology DS Audio client.</p>
+        <p xml:lang="zh">一款替代Synology DS Audio客户端的第三方音乐播放器。</p>
     </description>
-    <launchable type="desktop-id">com.chenyifaer.FaForever.desktop</launchable>
+    <launchable type="desktop-id">faforever.desktop</launchable>
     <screenshots>
         <screenshot type="default">
             <image>https://raw.githubusercontent.com/cyf/faforever/v1.0.0+45/screenshots/desktop.png</image>
@@ -41,6 +55,7 @@
             <url type="details">https://github.com/cyf/faforever/blob/main/CHANGELOG.md</url>
             <description>
                 <p>Release description</p>
+                <p xml:lang="zh">发布说明</p>
                 <ul>
                     <li>chore: v1.0.0+45</li>
                 </ul>

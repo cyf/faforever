@@ -8,6 +8,7 @@ packagerEmail: kjxbyz888@outlook.com
 license: MIT
 url: https://github.com/cyf/faforever-flutter
 build_arch: x86_64
+metainfo: linux/shared/faforever.metainfo.xml
 
 keywords:
   - FaForever

@@ -22,6 +22,8 @@ generic_name: FaForever
 categories:
   - Utility
 
+metainfo: linux/shared/faforever.metainfo.xml
+
 startup_notify: true
 
 # You can specify the shared libraries that you want to bundle with your app
