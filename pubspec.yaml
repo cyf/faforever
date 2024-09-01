@@ -35,7 +35,7 @@ dependencies:
   collection: ^1.18.0
   cupertino_icons: ^1.0.8
   device_info_plus: ^10.1.2
-  file_picker: ^8.0.7
+  file_picker: ^8.1.2
   flutter:
     sdk: flutter
   flutter_form_builder: ^9.4.1
@@ -59,12 +59,12 @@ dependencies:
   sentry_flutter: ^8.8.0
   sentry_logging: ^8.8.0
   shared_preferences: ^2.3.2
-  slang: ^3.31.1
+  slang: ^3.31.2
   slang_flutter: ^3.31.0
   syncfusion_flutter_sliders: ^26.2.11
   synchronized: ^3.2.0
   url_launcher: ^6.3.0
-  uuid: ^4.4.2
+  uuid: ^4.5.0
   window_manager: ^0.4.2
 
 dev_dependencies:
