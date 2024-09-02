@@ -32,7 +32,6 @@ dependencies:
   app_settings: # add ios privacy manifest
     git:
       url: https://github.com/spencerccf/app_settings
-  collection: ^1.18.0
   cupertino_icons: ^1.0.8
   device_info_plus: ^10.1.2
   file_picker: ^8.1.2
@@ -48,10 +47,7 @@ dependencies:
   gap: ^3.0.1
   image_picker: ^1.1.2
   keyboard_dismisser: ^3.0.0
-  logging: ^1.2.0
-  mime: ^1.0.6
   package_info_plus: ^8.0.2
-  path: ^1.9.0
   permission_handler: ^11.3.1
   photo_view: ^0.15.0
   reorderables: ^0.6.0
@@ -64,7 +60,6 @@ dependencies:
   syncfusion_flutter_sliders: ^26.2.11
   synchronized: ^3.2.0
   url_launcher: ^6.3.0
-  uuid: ^4.5.0
   window_manager: ^0.4.2
 
 dev_dependencies:
