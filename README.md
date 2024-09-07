@@ -19,7 +19,15 @@
     <td>Android</td>
     <td>
       <a href="https://play.google.com/store/apps/details?id=com.chenyifaer.faforever">
-        <img width="220" alt="Get it on Google Play" src="./docs/assets/Download_on_the_Google_Play.png">
+        <img width="220" alt="Get it on Google Play" src="./docs/assets/Download-on-the-Google-Play.png">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>F-Droid (TODO)</td>
+    <td>
+      <a href="https://f-droid.org/packages/com.chenyifaer.faforever">
+        <img width="220" src="./docs/assets/Download-on-the-F-Droid.svg" alt="Get it on F-Droid">
       </a>
     </td>
   </tr>
@@ -27,7 +35,7 @@
     <td>iOS</td>
     <td>
       <a href="https://apps.apple.com/us/app/id6504818084">
-        <img width="220" alt="Get it on App Store" src="./docs/assets/Download_on_the_App_Store.svg">
+        <img width="220" alt="Get it on App Store" src="./docs/assets/Download-on-the-App-Store.svg">
       </a>
     </td>
   </tr>
@@ -35,7 +43,7 @@
     <td>MacOS</td>
     <td>
       <a href="https://apps.apple.com/us/app/id6504817993">
-        <img width="220" alt="Get it on Mac App Store" src="./docs/assets/Download_on_the_Mac_App_Store.svg">
+        <img width="220" alt="Get it on Mac App Store" src="./docs/assets/Download-on-the-Mac-App-Store.svg">
       </a>
     </td>
   </tr>
@@ -150,10 +158,16 @@
     </td>
   </tr>
   <tr>
-    <td>Arch/Manjaro</td>
+    <td>Arch/Manjaro (TODO)</td>
     <td>
       <p>With pamac: <code>sudo pamac install faforever</code></p>
       <p>With yay: <code>yay -Sy faforever</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td>Nixpkgs (TODO)</td>
+    <td>
+      <p><code>nix-shell -p faforever</code></p>
     </td>
   </tr>
   <tr>
