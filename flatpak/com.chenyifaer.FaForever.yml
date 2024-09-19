@@ -25,10 +25,14 @@ modules:
       - bsdtar -Oxf faforever.deb data.tar.zst | bsdtar -xf -
       - install -Dm755 usr/share/faforever/faforever /app/bin/faforever
       - cp -r usr/share/faforever/data usr/share/faforever/lib /app/bin/
-      - install -Dm644 com.chenyifaer.FaForever.desktop /app/share/applications/com.chenyifaer.FaForever.desktop
+
+      - desktop-file-edit --remove-key=Version --set-key=Terminal --set-value='false' --set-icon='com.chenyifaer.FaForever' "usr/share/applications/faforever.desktop"
+      - install -Dm644 usr/share/applications/faforever.desktop /app/share/applications/com.chenyifaer.FaForever.desktop
+
       - install -Dm644 usr/share/icons/hicolor/128x128/apps/faforever.png /app/share/icons/hicolor/128x128/apps/com.chenyifaer.FaForever.png
       - install -Dm644 usr/share/icons/hicolor/256x256/apps/faforever.png /app/share/icons/hicolor/256x256/apps/com.chenyifaer.FaForever.png
-      - install -Dm644 com.chenyifaer.FaForever.metainfo.xml /app/share/appdata/com.chenyifaer.FaForever.metainfo.xml
+
+      - install -Dm644 usr/share/metainfo/faforever.metainfo.xml /app/share/appdata/com.chenyifaer.FaForever.metainfo.xml
     sources:
       - type: file
         only-arches:
@@ -53,23 +57,3 @@ modules:
           url: https://api.github.com/repos/cyf/faforever/releases/latest
           version-query: .tag_name | sub("v";"")
           url-query: .assets[] | select(.name=="faforever_" + $version + "_linux_aarch64.deb") | .browser_download_url
-
-      - type: file
-        url: https://raw.githubusercontent.com/cyf/faforever/v1.0.0+46/linux/shared/com.chenyifaer.FaForever.desktop
-        dest-filename: com.chenyifaer.FaForever.desktop
-        sha256: 8e13c1b75103f39a3f57f72c36537e18e01cfdaf50ba888c5524717cc3fefd12
-        x-checker-data:
-          type: json
-          url: https://api.github.com/repos/cyf/faforever/releases/latest
-          version-query: .tag_name
-          url-query: "\"https://raw.githubusercontent.com/cyf/faforever/\" + $version + \"/linux/shared/com.chenyifaer.FaForever.desktop\""
-
-      - type: file
-        url: https://raw.githubusercontent.com/cyf/faforever/v1.0.0+46/linux/shared/com.chenyifaer.FaForever.metainfo.xml
-        dest-filename: com.chenyifaer.FaForever.metainfo.xml
-        sha256: 105d52fc72641f023f5155f69f6bba8baee05b4e4daf87234517130a5e94f28a
-        x-checker-data:
-          type: json
-          url: https://api.github.com/repos/cyf/faforever/releases/latest
-          version-query: .tag_name
-          url-query: "\"https://raw.githubusercontent.com/cyf/faforever/\" + $version + \"/linux/shared/com.chenyifaer.FaForever.metainfo.xml\""

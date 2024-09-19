@@ -4,6 +4,7 @@ icon: logo/logo-512.png
 
 keywords:
   - FaForever
+  - Music
 
 generic_name: FaForever
 
@@ -20,7 +21,7 @@ generic_name: FaForever
 #      - bye
 
 categories:
-  - Utility
+  - Audio
 
 metainfo: linux/shared/faforever.metainfo.xml
 

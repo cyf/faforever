@@ -17,10 +17,11 @@ postuninstall_scripts:
 
 keywords:
   - FaForever
+  - Music
 
 generic_name: FaForever
 
 categories:
-  - Utility
+  - Audio
 
 startup_notify: true

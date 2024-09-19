@@ -57,6 +57,7 @@ metainfo: linux/shared/faforever.metainfo.xml
 
 keywords:
   - FaForever
+  - Music
 
 # a name to categorize the app into a section of application
 generic_name: FaForever
@@ -73,7 +74,7 @@ generic_name: FaForever
 # the categories the application belong to
 # refer: https://specifications.freedesktop.org/menu-spec/latest/
 categories:
-  - Utility
+  - Audio
 
 # let OS know if the application can be run on start_up. If it's false 
 # the application will deny to the OS if it was added as a start_up 

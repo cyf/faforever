@@ -12,10 +12,11 @@ metainfo: linux/shared/faforever.metainfo.xml
 
 keywords:
   - FaForever
+  - Music
 
 generic_name: FaForever
 
 categories:
-  - Utility
+  - Audio
 
 startup_notify: true
