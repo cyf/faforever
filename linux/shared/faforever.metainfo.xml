@@ -14,8 +14,7 @@
     <summary>A third-party music player that replaces Synology DS Audio client</summary>
     <summary xml:lang="zh">一款替代Synology DS Audio客户端的第三方音乐播放器</summary>
     <developer id="com.kjxbyz">
-        <name>kjxbyz</name>
-        <name xml:lang="zh">科技小白英仔</name>
+        <name>Insco LLC</name>
     </developer>
     <url type="bugtracker">https://github.com/cyf/faforever/issues</url>
     <url type="homepage">https://www.chenyifaer.com/faforever</url>
