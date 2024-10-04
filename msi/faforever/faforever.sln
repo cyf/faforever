@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "faforever", "faforever.wixproj", "{A16FABDC-4D7B-4843-BC7B-23AEFCFBF3EE}"
+Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "faforever", "faforever\faforever.wixproj", "{A16FABDC-4D7B-4843-BC7B-23AEFCFBF3EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
