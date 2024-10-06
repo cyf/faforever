@@ -106,7 +106,7 @@
 
     <!-- Desktop shortcut (user's choice) -->
     <Component Id="DesktopShortcutComponent" Directory="DesktopFolder">
-      <RegistryValue Root="HKCU" Key="SOFTWARE\INSCO LLC\FaForever" Name="EnableDesktopShortcut" Value="1" />
+      <RegistryValue Root="HKCU" Key="SOFTWARE\Insco LLC\FaForever" Name="EnableDesktopShortcut" Value="1" />
       <Shortcut Name="FaForever" Description="A third-party music player that replaces Synology DS Audio client." Directory="DesktopFolder" Target="[#FaForever.exe]" />
     </Component>
   </Fragment>
