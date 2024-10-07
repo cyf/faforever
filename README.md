@@ -23,6 +23,14 @@
       </a>
     </td>
   </tr>
+  <!-- <tr>
+    <td>Amazon (TODO)</td>
+    <td>
+      <a href="https://www.amazon.com/dp/XXXXXX">
+        <img width="220" src="./docs/assets/Download-on-the-Amazon-App-Store.png" alt="Get it on Amazon App Store">
+      </a>
+    </td>
+  </tr>
   <tr>
     <td>F-Droid (TODO)</td>
     <td>
@@ -30,7 +38,7 @@
         <img width="220" src="./docs/assets/Download-on-the-F-Droid.svg" alt="Get it on F-Droid">
       </a>
     </td>
-  </tr>
+  </tr> -->
   <tr>
     <td>iOS</td>
     <td>
