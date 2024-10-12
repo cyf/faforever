@@ -32,11 +32,11 @@ dependencies:
   app_settings: # e1d39e4ea052e9dd9a47fbab49737846d9b43264
     path: ./plugins/app_settings
   cupertino_icons: ^1.0.8
-  device_info_plus: ^10.1.2
+  device_info_plus: ^11.0.0
   file_picker: ^8.1.2
   flutter:
     sdk: flutter
-  flutter_form_builder: ^9.4.1
+  flutter_form_builder: ^9.5.0
   flutter_gen: ^5.8.0
   flutter_localizations:
     sdk: flutter
@@ -46,7 +46,7 @@ dependencies:
   gap: ^3.0.1
   image_picker: ^1.1.2
   keyboard_dismisser: ^3.0.0
-  package_info_plus: ^8.0.2
+  package_info_plus: ^8.0.3
   permission_handler: ^11.3.1
   photo_view: ^0.15.0
   reorderables: ^0.6.0
