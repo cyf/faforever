@@ -12,6 +12,18 @@ import 'package:flutter/widgets.dart';
 class $LogoGen {
   const $LogoGen();
 
+  /// File path: logo/logo-128.png
+  AssetGenImage get logo128 => const AssetGenImage('logo/logo-128.png');
+
+  /// File path: logo/logo-256.png
+  AssetGenImage get logo256 => const AssetGenImage('logo/logo-256.png');
+
+  /// File path: logo/logo-32.png
+  AssetGenImage get logo32 => const AssetGenImage('logo/logo-32.png');
+
+  /// File path: logo/logo-512.png
+  AssetGenImage get logo512 => const AssetGenImage('logo/logo-512.png');
+
   /// File path: logo/logo.icns
   String get logoIcns => 'logo/logo.icns';
 
@@ -19,7 +31,8 @@ class $LogoGen {
   AssetGenImage get logoPng => const AssetGenImage('logo/logo.png');
 
   /// List of all assets
-  List<dynamic> get values => [logoIcns, logoPng];
+  List<dynamic> get values =>
+      [logo128, logo256, logo32, logo512, logoIcns, logoPng];
 }
 
 class Assets {
@@ -58,7 +71,7 @@ class AssetGenImage {
     ImageRepeat repeat = ImageRepeat.noRepeat,
     Rect? centerSlice,
     bool matchTextDirection = false,
-    bool gaplessPlayback = false,
+    bool gaplessPlayback = true,
     bool isAntiAlias = false,
     String? package,
     FilterQuality filterQuality = FilterQuality.low,
