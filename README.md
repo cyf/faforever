@@ -1,12 +1,8 @@
 # FaForever
 
-> A third-party music player that replaces Synology DS Audio client.
-
 [![Test](https://github.com/cyf/faforever/actions/workflows/test.yml/badge.svg)](https://github.com/cyf/faforever/actions/workflows/test.yml)
 [![Release](https://github.com/cyf/faforever/actions/workflows/release.yml/badge.svg)](https://github.com/cyf/faforever/actions/workflows/release.yml)
 [![GitHub Release](https://img.shields.io/github/v/release/cyf/faforever)](https://github.com/cyf/faforever/releases/latest)
-[![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/cyf/faforever)](https://github.com/cyf/faforever/issues/new)
-[![GitHub License](https://img.shields.io/github/license/cyf/faforever)](https://raw.githubusercontent.com/cyf/faforever/main/LICENSE)
 
 ## 🛍️ Get It On Stores
 
